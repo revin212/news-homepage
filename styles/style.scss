@@ -83,9 +83,11 @@ header{
     height: 100vh;
     width: 70%;
     position: fixed;
-    right: 0;
+    right: -400px;
+    top: 0;
     background-color: $off-white;
-    z-index: 2;
+    z-index: 3;
+    animation: showMenu 400ms ease forwards;
     .menu{
         list-style-type: none;
         margin-top: 7rem;
@@ -102,7 +104,7 @@ header{
         padding: 1rem;
         position: absolute;
         right: 0;
-        top: 10px;
+        top: 2.2rem;
         .close{
             display: none;
         }
@@ -111,6 +113,26 @@ header{
             filter: invert(79%) sepia(83%) saturate(1212%) hue-rotate(321deg) brightness(100%) contrast(83%);
         }
     }
+}
+
+@keyframes showMenu{
+    to{
+        right: 0;
+    }
+}
+
+#overlay {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    display: none;
+    background-color: rgb(0,0,0,0.5);
 }
 
 .main-content{

@@ -17,7 +17,7 @@
     </div>
     <div class="main-menu">
       <div class="mobile-menu">
-        <img class= "menu-btn" src="./assets/images/icon-menu.svg" alt="">
+        <img class= "menu-btn" id="menu-btn" src="./assets/images/icon-menu.svg" alt="">
       </div>
       <ul class="desktop-menu">
         <li>Home</li>
@@ -31,8 +31,10 @@
     </div>
   </header>
   
+  <div id="overlay"></div>
+
   <aside class="sidebar-wrapper">
-    <img class= "close" src="./assets/images/icon-menu-close.svg" alt="">
+    <img class= "close" id="close-btn" src="./assets/images/icon-menu-close.svg" alt="">
     <ul class="menu">
       <li>Home</li>
       <li>New</li>
@@ -121,6 +123,7 @@
     </section>
 
   </main>
+  <script src="./index.js"></script>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Revin Dennis Ramadhan</a>.
