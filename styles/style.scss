@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import "./var";
+@import "./mixin";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 1rem;
+    @include font(400);
+    font-size: 15px;
+    h1{
+        @include font(800);
+        font-size: 3rem;
+        margin: 1.5rem 0;
+        line-height: 3rem;
+        color: $very-dark-blue;
+    }
+    h2{
+        @include font(700);
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+    h3{
+        @include font(700);
+        font-size: 1.2rem;
+        margin: 0.8rem 0;
+    }
+    p{
+        line-height: 1.6rem;
+        color: $dark-grayish-blue;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    .menu{
+        list-style-type: none;
+        display: none;
+    }
+    .logo{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .mobile-menu{
+        padding: 1rem;
+        padding-right: 0;
+        &:hover{
+            cursor: pointer;
+        }
+    }        
+}
+
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1;
+
+    .thumbnail{
+        img{
+            width: 100%;
+        }
+        .desktop{
+            display: none;
+        }
+    }
+
+    .desc-wrapper{
+        button{
+            @include flex-center();
+            border: none;
+            font-weight: 800;
+            margin: 1.5rem 0;
+            padding: 1rem 2rem;
+            letter-spacing: 0.3rem;
+            background-color: $soft-red;
+            color: $off-white;
+            &:hover{
+                cursor: pointer;
+                background-color: $very-dark-blue;
+            }
+        }
+    }
+
+    .new-articles{
+        background-color: $very-dark-blue;
+        margin: 3rem 0;
+        padding: 1.5rem 1.5rem;
+        h2{
+            margin-top: 0;
+            color: $soft-orange;
+        }
+        h3{
+            color: $off-white;
+            margin: 0.5rem 0;
+            &:hover{
+                cursor: pointer;
+                color: $soft-orange;
+            }
+        }
+        .new-1{
+            margin-top: 2.5rem;
+            padding-bottom: 1.5rem;
+        }
+        .new-2{
+            border-top: 1px solid $dark-grayish-blue;
+            border-bottom: 1px solid $dark-grayish-blue;
+            padding: 1.5rem 0;
+        }
+        .new-3{
+            padding-top: 1.5rem;
+        }
+    }
+
+    .articles{
+        .desc-wrapper{
+            margin-left: 1.5rem;           
+        }
+        img{
+            width: 30%
+        }
+        h2{
+            margin-top: 0;
+            margin-bottom: 0.8rem;
+            font-size: 2rem;
+            color: $grayish-blue;
+        }
+        h3{
+            color: $very-dark-blue;
+            &:hover{
+                cursor: pointer;
+                color: $soft-orange;
+            }
+        }
+
+        @for $i from 1 through 3{
+            .article-#{$i}{
+                display: flex;
+                margin: 3rem 0;
+            }
+        }
+    }
+
+}

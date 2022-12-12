@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+body h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  margin: 1.5rem 0;
+  line-height: 3rem;
+  color: hsl(240deg, 100%, 5%);
+}
+body h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+body h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+}
+body p {
+  line-height: 1.6rem;
+  color: hsl(236deg, 13%, 42%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+header .menu {
+  list-style-type: none;
+  display: none;
+}
+header .logo:hover {
+  cursor: pointer;
+}
+header .mobile-menu {
+  padding: 1rem;
+  padding-right: 0;
+}
+header .mobile-menu:hover {
+  cursor: pointer;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1;
+}
+.main-content .thumbnail img {
+  width: 100%;
+}
+.main-content .thumbnail .desktop {
+  display: none;
+}
+.main-content .desc-wrapper button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: 800;
+  margin: 1.5rem 0;
+  padding: 1rem 2rem;
+  letter-spacing: 0.3rem;
+  background-color: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+}
+.main-content .desc-wrapper button:hover {
+  cursor: pointer;
+  background-color: hsl(240deg, 100%, 5%);
+}
+.main-content .new-articles {
+  background-color: hsl(240deg, 100%, 5%);
+  margin: 3rem 0;
+  padding: 1.5rem 1.5rem;
+}
+.main-content .new-articles h2 {
+  margin-top: 0;
+  color: hsl(35deg, 77%, 62%);
+}
+.main-content .new-articles h3 {
+  color: hsl(36deg, 100%, 99%);
+  margin: 0.5rem 0;
+}
+.main-content .new-articles h3:hover {
+  cursor: pointer;
+  color: hsl(35deg, 77%, 62%);
+}
+.main-content .new-articles .new-1 {
+  margin-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.main-content .new-articles .new-2 {
+  border-top: 1px solid hsl(236deg, 13%, 42%);
+  border-bottom: 1px solid hsl(236deg, 13%, 42%);
+  padding: 1.5rem 0;
+}
+.main-content .new-articles .new-3 {
+  padding-top: 1.5rem;
+}
+.main-content .articles .desc-wrapper {
+  margin-left: 1.5rem;
+}
+.main-content .articles img {
+  width: 30%;
+}
+.main-content .articles h2 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  color: hsl(233deg, 8%, 79%);
+}
+.main-content .articles h3 {
+  color: hsl(240deg, 100%, 5%);
+}
+.main-content .articles h3:hover {
+  cursor: pointer;
+  color: hsl(35deg, 77%, 62%);
+}
+.main-content .articles .article-1 {
+  display: flex;
+  margin: 3rem 0;
+}
+.main-content .articles .article-2 {
+  display: flex;
+  margin: 3rem 0;
+}
+.main-content .articles .article-3 {
+  display: flex;
+  margin: 3rem 0;
+}/*# sourceMappingURL=style.css.map */

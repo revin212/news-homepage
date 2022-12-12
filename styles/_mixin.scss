@@ -1,0 +1,9 @@
+@mixin font($weight){
+    font-family: 'Inter', sans-serif;
+    font-weight: $weight;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
