@@ -53,23 +53,20 @@ header{
     .desktop-menu{
         list-style-type: none;
         display: none;
-        color: $very-dark-blue;
         li{
+            color: $dark-grayish-blue;
             &:hover{
                 cursor: pointer;
-                color: $soft-orange;
+                color: $soft-red;
             }
         }
     }
     .mobile-menu{
         padding: 1rem;
-        .close{
-            display: none;
-        }
         &:hover{
             cursor: pointer;
             img{
-                filter: invert(79%) sepia(83%) saturate(1212%) hue-rotate(321deg) brightness(100%) contrast(83%);
+                filter: invert(58%) sepia(47%) saturate(5563%) hue-rotate(331deg) brightness(99%) contrast(90%);
             }
         }
     }        
@@ -94,7 +91,7 @@ header{
         li{
             &:hover{
                 cursor: pointer;
-                color: $soft-orange;
+                color: $soft-red;
             }
             margin: 1.5rem 0;
         }
@@ -105,10 +102,9 @@ header{
         right: 0;
         top: 2.2rem;
         .close{
-            display: none;
             &:hover{
                 cursor: pointer;
-                filter: invert(79%) sepia(83%) saturate(1212%) hue-rotate(321deg) brightness(100%) contrast(83%);
+                filter: invert(58%) sepia(47%) saturate(5563%) hue-rotate(331deg) brightness(99%) contrast(90%);
             }
         }
     }
@@ -179,6 +175,9 @@ header{
                 color: $soft-orange;
             }
         }
+        p{
+            color: $grayish-blue;
+        }
         .new-1{
             margin-top: 2.5rem;
             padding-bottom: 1.5rem;
@@ -210,7 +209,7 @@ header{
             color: $very-dark-blue;
             &:hover{
                 cursor: pointer;
-                color: $soft-orange;
+                color: $soft-red;
             }
         }
 
