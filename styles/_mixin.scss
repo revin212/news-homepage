@@ -7,3 +7,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin displayGrid($columns){
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat($columns, 1fr);
+}

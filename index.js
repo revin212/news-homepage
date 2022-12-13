@@ -1,6 +1,6 @@
 const sideMenu = document.querySelector("aside");
-const menuBtn = document.querySelector("#menu-btn");
-const closeBtn = document.querySelector("#close-btn");
+const menuBtn = document.querySelector(".mobile-menu");
+const closeBtn = document.querySelector(".close-menu");
 const overlay = document.querySelector("#overlay");
 
  menuBtn.addEventListener('click', () => {
